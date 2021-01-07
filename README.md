@@ -51,7 +51,7 @@ Desktop view sorted active - dark mode:
 
 Desktop view - dragging, light mode:
 
-![A preview of the desktop design](pictures/Desktop7.png)
+![A preview of the desktop design](pictures/Dragging1.png)
 
 
 ## Mobile view
