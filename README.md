@@ -27,42 +27,42 @@ This todo project has been achieved by HTML5, CSS3 and Vanilla JS only (no frame
 ## Desktop view
 Desktop view light mode:
 
-![A preview of the desktop design](pictures/desktop1.PNG)
+![A preview of the desktop design](pictures/Desktop1.PNG)
 
 Desktop view dark mode:
 
-![A preview of the desktop design](pictures/desktop2.PNG)
+![A preview of the desktop design](pictures/Desktop2.PNG)
 
 Desktop view with marked completed todos:
 
-![A preview of the desktop design](pictures/desktop3.PNG)
+![A preview of the desktop design](pictures/Desktop3.PNG)
 
 Desktop view with marked completed todos - dark mode:
 
-![A preview of the desktop design](pictures/desktop4.PNG)
+![A preview of the desktop design](pictures/Desktop4.PNG)
 
 Desktop view sorted completed - dark mode:
 
-![A preview of the desktop design](pictures/desktop5.PNG)
+![A preview of the desktop design](pictures/Desktop5.PNG)
 
 Desktop view sorted active - dark mode:
 
-![A preview of the desktop design](pictures/desktop2.PNG)
+![A preview of the desktop design](pictures/Desktop2.PNG)
 
 Desktop view - dragging, light mode:
 
-![A preview of the desktop design](pictures/desktop7.PNG)
+![A preview of the desktop design](pictures/Desktop7.PNG)
 
 
 ## Mobile view
 
 Mobile view light mode:
 
-![A preview of the mobile design](pictures/mobile1.PNG)
+![A preview of the mobile design](pictures/Mobile1.PNG)
 
 Mobile view dark mode:
 
-![A preview of the mobile design](pictures/mobile2.PNG)
+![A preview of the mobile design](pictures/Mobile2.PNG)
 
 ## Challenge specification
 
