@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: hsl(220, 98%, 61%);
+  --gradient: linear-gradient(to right, rgb(146, 227, 247), rgb(192, 88, 243));
+}
+html,
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  --hue: 220;
+  --circle: hsl(234, 39%, 85%);
+  --todoList: hsl(0, 0%, 98%);
+  --container: hsl(236, 33%, 92%);
+  --lightFill: hsl(236, 9%, 61%);
+  --disabled: hsl(234, 39%, 85%);
+  --textFill: hsl(237, 14%, 26%);
+}
+#toggle_nightAndDay:checked ~ * {
+  --hue: 240;
+  --container: hsl(235, 21%, 11%);
+  --textFill: hsl(234, 39%, 85%);
+  --lightFill: hsl(236, 9%, 61%);
+  --todoList: hsl(237, 14%, 26%);
+  --disabled: hsl(235, 10%, 54%);
+  --circle: hsl(234, 11%, 52%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--container);
+  transition: all 0.2s;
+}
+
+.hero {
+  background-image: url('images/bg-desktop-light.jpg');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.darkHero {
+  background-image: url('images/bg-desktop-dark.jpg');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  position: relative;
+  background: transparent;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  padding: 2rem;
+  z-index: 10;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 5px;
+}
+.wrap {
+  width: 20px;
+  height: 20px;
+}
+
+.wrap > i {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.createTodo {
+  display: flex;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: var(--todoList);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:focus,
+input:focus {
+  outline-style: none;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid var(--circle);
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+}
+
+.done {
+  background: var(--gradient);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+.disabled {
+  color: var(--disabled) !important;
+  text-decoration: line-through;
+}
+.marked {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 100;
+  top: 5px;
+  left: 5px;
+}
+
+.tick {
+  opacity: 1;
+}
+
+.input {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--textFill);
+  width: 80%;
+  height: 1.5rem;
+  margin-left: 0.3rem;
+  background: transparent;
+  border: none;
+}
+
+.todoList {
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--todoList);
+}
+
+.todoItem {
+  min-height: 2rem;
+  display: flex;
+}
+.itemContent {
+  width: 80%;
+  height: 1.6rem;
+  align-self: center;
+  color: var(--textFill);
+}
+.itemContent:hover {
+  cursor: pointer;
+}
+.itemsLeft {
+  margin-right: 2rem;
+}
+.all {
+  margin-right: -1.5rem;
+}
+.active {
+  margin-right: -1.5rem;
+}
+.focused {
+  color: hsl(220, 98%, 61%);
+}
+.todoSummary {
+  color: var(--lightFill);
+  display: flex;
+  font-weight: 700;
+  margin: 0.5em;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.todoSummary > a:hover {
+  color: var(--textFill);
+}
+.todoSummary > p {
+  color: var(--lightFill);
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: var(--lightFill);
+}
+hr {
+  border: 1px solid var(--circle);
+  width: 100%;
+  margin: 0.5rem auto;
+}
+.todoInfo {
+  color: var(--lightFill);
+  margin: 2rem auto;
+  font-size: 0.8rem;
+}
+
+.removeTodo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  padding-top: 0.5rem;
+  fill: var(--lightFill);
+}
+
+.dragging {
+  display: block;
+  width: 28rem;
+  height: 3rem;
+  background-color: rgba(209, 209, 209, 0.8);
+  border: 1px solid rgb(180, 180, 180);
+  box-shadow: 1px 1px 2px 2px rgba(121, 121, 121, 0.4);
+  cursor: grabbing;
+}
+.draggable.dragging {
+  display: block;
+  opacity: 0.5;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--lightFill);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    max-width: 25rem;
+  }
+  .wrap {
+    width: 20px;
+    height: 20px;
+  }
+  .title > h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .hero {
+    background-image: url('images/bg-mobile-light.jpg');
+    height: 12rem;
+  }
+  .darkHero {
+    background-image: url('images/bg-mobile-dark.jpg');
+    height: 12rem;
+  }
+  .todoSummary {
+    margin: 0.5rem;
+    font-size: 0.6rem;
+  }
+}

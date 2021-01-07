@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>Frontend Mentor | Todo app</title>
+</head>
+
+<body>
+  <input type="checkbox" id="toggle_nightAndDay" class="toggle rememberState">
+  <div id="fauxBody">
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">
+          <h1>Todo</h1>
+          <label class="wrap btn" for="toggle_nightAndDay"> <i class="nightAndDay fas fa-moon fa-2x"></i></label>
+        </div>
+        <div class="createTodo">
+          <button id="accept" class='btn toCreate'>
+            <div class="circle popup" onclick="myPopup()">
+              <span class="popuptext" id="myPopup">Add new todo first!</span>
+            </div>
+          </button>
+          <input type="text" class="input" placeholder='Create a new todo...'>
+          <label for="input"></label>
+        </div>
+        <div class="todoList">
+          <div class="items"></div>
+          <div class="todoSummary">
+            <p class="itemsLeft">Items left</p>
+            <a href="#" class="all focused">All</a>
+            <a href="#" class="active">Active</a>
+            <a href="#" class="completed">Completed</a>
+            <a href="#" class="clearTodos">Clear Completed</a>
+          </div>
+        </div>
+        <div class="todoInfo">
+          <p class="dragDrop">Drag and drop to reorder list</p>
+        </div>
+      </div>
+      <div class="hero"></div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Dimitar Odrinski</a>.
+      </div>
+    </div>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+
+</html>
