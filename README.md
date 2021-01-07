@@ -31,38 +31,38 @@ Desktop view light mode:
 
 Desktop view dark mode:
 
-![A preview of the desktop design](pictures/Desktop2.PNG)
+![A preview of the desktop design](pictures/Desktop2.png)
 
 Desktop view with marked completed todos:
 
-![A preview of the desktop design](pictures/Desktop3.PNG)
+![A preview of the desktop design](pictures/Desktop3.png)
 
 Desktop view with marked completed todos - dark mode:
 
-![A preview of the desktop design](pictures/Desktop4.PNG)
+![A preview of the desktop design](pictures/Desktop4.png)
 
 Desktop view sorted completed - dark mode:
 
-![A preview of the desktop design](pictures/Desktop5.PNG)
+![A preview of the desktop design](pictures/Desktop5.png)
 
 Desktop view sorted active - dark mode:
 
-![A preview of the desktop design](pictures/Desktop2.PNG)
+![A preview of the desktop design](pictures/Desktop2.png)
 
 Desktop view - dragging, light mode:
 
-![A preview of the desktop design](pictures/Desktop7.PNG)
+![A preview of the desktop design](pictures/Desktop7.png)
 
 
 ## Mobile view
 
 Mobile view light mode:
 
-![A preview of the mobile design](pictures/Mobile1.PNG)
+![A preview of the mobile design](pictures/Mobile1.png)
 
 Mobile view dark mode:
 
-![A preview of the mobile design](pictures/Mobile2.PNG)
+![A preview of the mobile design](pictures/Mobile2.png)
 
 ## Challenge specification
 
