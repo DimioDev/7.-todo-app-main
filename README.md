@@ -27,7 +27,7 @@ This todo project has been achieved by HTML5, CSS3 and Vanilla JS only (no frame
 ## Desktop view
 Desktop view light mode:
 
-![A preview of the desktop design](pictures/Desktop1.PNG)
+![A preview of the desktop design](pictures/Desktop1.png)
 
 Desktop view dark mode:
 
